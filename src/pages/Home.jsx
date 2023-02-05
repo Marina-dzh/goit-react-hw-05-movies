@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { getMovies } from "../Api";
-import { MoviesList } from "../components/MoviesList";
+import { MoviesList } from "../components/MoviesList/MoviesList";
 const Home = () => {
   const [movies, setMovies] = useState();
 

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { getCast } from "../Api";
+import { getCast } from "../../Api";
 import { useEffect, useState } from "react";
-import { Loader } from "../components/Loader";
+import { Loader } from "../../components/Loader";
 import {CasSt} from "./Cast.styled" ;
 const Cast = () => {
 const { id } = useParams();

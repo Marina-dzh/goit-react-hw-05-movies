@@ -1,5 +1,5 @@
 
-import { Loader } from "./Loader";
+import { Loader } from "../Loader";
 import {  Suspense } from "react";
 import {  Link, Outlet } from "react-router-dom";
 

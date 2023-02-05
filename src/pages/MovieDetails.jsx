@@ -1,6 +1,6 @@
 import { useParams, useLocation } from "react-router-dom";
 import { BackLink } from "../components/BackLink";
-import { MovieCard } from "components/MovieCard";
+import { MovieCard } from "components/MovieCard/MovieCard";
 import { getMoviesID } from "../Api";
 import { useEffect, useState } from "react";
 import { useRef } from "react";

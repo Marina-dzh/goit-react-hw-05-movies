@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
-import { MoviesList } from "../components/MoviesList";
-import { Searchbar } from "../components/SearchBox";
+import { MoviesList } from "../components/MoviesList/MoviesList";
+import { Searchbar } from "../components/SearchBox/SearchBox";
 import { getQuery} from "../Api";
 import { useState , useEffect} from "react";
 import { Loader } from "../components/Loader";
