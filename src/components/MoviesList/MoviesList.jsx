@@ -9,15 +9,15 @@ export const MoviesList = ( {movies} ) => {
 // console.log(movies)
   return (
     <Container>
-      {movies.map((movie) => (
-        <CardWrapper key={movie.id}>
-          <Link to={`/movies/${movie.id}`} state={{ from: location }} style={{width:"100%",height :'100%'}}>
+      {movies.map(({id, title, poster_path}) => (
+        <CardWrapper key={id}>
+          <Link to={`/movies/${id}`} state={{ from: location }} style={{width:"100%",height :'100%'}}>
             <figure style={{ objectFit: "cover", margin: '0' }}>
               
-              {movie.poster_path && <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" loading="lazy"
+              {poster_path && <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt="" loading="lazy"
                 style={{ width: '100%' }} />}
-            {!movie.poster_path && <img src="https://via.placeholder.com/198x295?text=No+Img" alt="" /> }</figure>
-            <Name>{movie.title}</Name>
+            {!poster_path && <img src="https://via.placeholder.com/198x295?text=No+Image" alt="" style={{ width: '100%' }} /> }</figure>
+            <Name>{title}</Name>
           </Link>
         </CardWrapper>
       ))}

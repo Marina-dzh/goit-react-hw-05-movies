@@ -30,7 +30,7 @@ color: orange;
   :hover{
     border: 1px solid orange;
     color: orange;
-    text-decoration:underline;}
+    }
    
 `;
 
