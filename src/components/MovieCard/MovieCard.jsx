@@ -1,9 +1,9 @@
 
 import { Loader } from "../Loader";
 import {  Suspense } from "react";
-import {  Link, Outlet } from "react-router-dom";
+import {    Outlet } from "react-router-dom";
 
-import { Bor, Img, H2 } from "./MovieCard.styled";
+import { Bor, Img, H2, InfoItem, LinkS } from "./MovieCard.styled";
 export const MovieCard = (props) => {
   const { movie, genre, data } = props
   const {poster_path, title,release_date,vote_average, overview, genres}= movie
@@ -26,13 +26,13 @@ export const MovieCard = (props) => {
           <Bor>{genre(genres)}</Bor>
           <div>
             <h4>Additional information:</h4>
-             <ul>
-        <li>
-          <Link to="cast">Cast</Link>
-        </li>
-        <li>
-          <Link to="reviews">Reviews</Link>
-              </li>
+             <ul style={{listStyle:'none'}}>
+        <InfoItem>
+          <LinkS to="cast">Cast</LinkS>
+        </InfoItem>
+        <InfoItem>
+          <LinkS to="reviews">Reviews</LinkS>
+              </InfoItem>
             </ul>
             <Suspense fallback={<Loader  />}>
         <Outlet />
