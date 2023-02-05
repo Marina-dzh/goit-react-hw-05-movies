@@ -3,8 +3,10 @@ import styled from '@emotion/styled'
 export const Container = styled.div`
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 310px);
   gap: 16px;
+   justify-content: center;
+  
 `;
 
 export const CardWrapper = styled.div`
