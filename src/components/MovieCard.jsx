@@ -20,9 +20,9 @@ export const MovieCard = (props) => {
           </H2>
           
           {movie.vote_average!==0 && <Bor style={{textAlign:"center"}}> User Score: {Math.round(movie.vote_average * 10)}%</Bor>}
-          <h3>Overview:</h3>
+          <h3 style={{ marginBottom:'0'}}>Overview:</h3>
           <Bor>{movie.overview}</Bor>
-          <h4>Genres:</h4>
+          <h4 style={{ marginBottom:'0'}}>Genres:</h4>
           <Bor>{genre(movie.genres)}</Bor>
           <div>
             <h4>Additional information:</h4>
